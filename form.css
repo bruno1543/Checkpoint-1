@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+}
+body{
+    background: linear-gradient(#391e46,#ffffff) ;
+    background-repeat: no-repeat;
+}
+.pagination{
+    margin-left: auto;
+    margin-right: auto;
+    /* background: #1B1B1B; */
+    padding: 1em;
+    /* margin: 0; */
+}
+.page-link{
+    border: 2px solid #1B1B1B;
+    /* background: #391e46; */
+    color: #efb810;
+}
+.page-link:hover{
+    border: 2px solid #1B1B1B;
+    /* background: #efb810; */
+    color: #391E46;
+}
+#registro{
+    display: grid;
+    grid-template-columns: repeat(2 ,600px);
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 60px;
+
+}
+.formulario h3{
+    text-align: center;
+    /* color: #391E46; */
+    padding: 1em;
+    border-bottom: 1px solid #391E46;
+    
+}
+
+.formulario input{
+    padding: .7em;
+    margin: 1em;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#commit{
+    height: 150px;
+}
+.formulario button{
+    margin: 2em;
+    padding: .7em;
+    border-radius: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.formulario button:hover{
+    background: #391E46;
+    color: #efb810;
+}
+
+#campo{
+    /* background: #391E46; */
+    width: 500px;
+    height: 290px;
+    margin-top: 100px;
+    border: 1px solid #391E46;
+
+}
+#campo h2{
+  text-align: center;
+}
+#nombre ,#contacto ,#comentarios{
+    padding: .5em;
+}

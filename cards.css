@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    font-family: monospace;
+}
+.container-inicio{
+    background: linear-gradient(#391e46,#1B1B1B ,#FFFFFF);
+    margin: 0;
+    height: 900px;
+    padding-top: 15%; 
+}
+.controls-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h1{
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(#391E46, #FFFFFF);
+}
+
+#personContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4em;
+    position: relative;
+    /* text-align: center; */
+}
+/* --------------------------------------------------------------------- */
+.cardContainer{
+    position: absolute;
+}
+.flipCard{
+    position: relative;
+}
+.flipCard:hover .cardContainer{
+    position: absolute;
+    /* transform: perspective(600px) rotateY(360deg); */
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+.personaje-block{
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(#391E46, #1B1B1B);
+    /* background: linear-gradient(#391E46, #F3C19C); */
+    border-radius: 130px 190px 120px 160px;
+    box-shadow: 10px 0 40px 10px #391E46 ;
+    width: 300px;
+    backface-visibility: hidden; 
+    overflow: hidden;
+    transition: .5s;
+    transform: perspective(600px) rotateY(0deg);
+    position: relative;
+}
+.card-back{
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(#391E46, #1B1B1B);
+    /* background: linear-gradient(#391E46, #F3C19C); */
+    border-radius: 130px 190px 120px 160px;
+    box-shadow: 10px 0 40px 10px #391E46 ;
+    width: 300px;
+    transform: perspective(600px) rotateY(180deg);
+    background: red;
+    height: 100%;
+    /* position: absolute; */
+    /* position: relative; */
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.personaje-block:hover{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card-back:hover{
+    /* position: absolute;  */
+    transform: perspective(600px) rotateY(0deg);
+    backface-visibility:visible;
+}
+
+
+/* .card-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+.personaje-block:hover{
+    transition: all .8s;
+    -webkit-transition:all .9s ease;
+    transform:scale(1.10);
+    transform: perspective(300px) rotateY(180deg);
+}
+.card-Back{
+    transform: rotateY(180deg);
+    position: ;
+}
+.card-Back:hover {
+    transform: rotateY(360deg);
+    position: absolute;
+    top: 0%;
+  } */
+
+  /* ---------------------------------------------------------------------------------------- */
+.img-personaje{
+    /* display: block; */
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #F5E8FA;
+    /* border-radius:10px; */
+    border-radius: 130px 190px 120px 160px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #efb810;
+    
+}
+.img-personaje img{
+    display: block;
+    border-radius:10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 130px 190px 120px 160px;
+
+}
+p{
+    color: aliceblue;
+    text-align: center;
+    padding: .5em;
+}
+.name{
+    margin-top: .5em;
+    text-transform: uppercase;
+    border-bottom:1px solid #efb810 ;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.controls-container{
+    padding: .5em;
+}
+.pagination{
+    margin-left: auto;
+    margin-right: auto;
+    /* background: #1B1B1B; */
+}
+.page-link{
+    border: 2px solid #1B1B1B;
+    background: #391e46;
+    color: #efb810;
+}
+.page-link:hover{
+    border: 2px solid #1B1B1B;
+    background: #efb810;
+    color: #391E46;
+}
